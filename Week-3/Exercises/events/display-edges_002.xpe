@@ -1,0 +1,20 @@
+#Expyriment 1.0.0 (Python 3.13.9), .xpe-file, coding: UTF-8
+#date: Thu Mar 12 2026 18:55:48
+#sha1: 9a7736
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Ninas-MacBook-Air.local', release='23.6.0', version='Darwin Kernel Version 23.6.0: Fri Jul  5 17:56:39 PDT 2024; root:xnu-10063.141.1~2/RELEASE_ARM64_T8122', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+29660,design,log,
+#design: #exp: edge experiment
+#design: block_cnt,block_id,trial_cnt,trial_id
+29660,design,logged,
+29660,Experiment,started
+29660,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x12f1116c0>'
+29660,stderr,received,'Traceback (most recent call last):'
+29660,stderr,received,'  File "/opt/anaconda3/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+29660,stderr,received,'    if self._compression_filename is not None:'
+29660,stderr,received,"AttributeError: 'Rectangle' object has no attribute '_compression_filename'"
+29661,stderr,received,'Traceback (most recent call last):'
+29661,stderr,received,'  File "/Users/ninakapstein/Desktop/cogsup/programming/Assignments/Week-3/Exercises/display-edges.py", line 12, in <module>\n    square1 = expyriment.stimuli.Rectangle(\n        size = (100, 100),\n    ...<2 lines>...\n        line_colour=(255, 0, 0)\n    )'
+29661,stderr,received,"TypeError: Rectangle.__init__() got an unexpected keyword argument 'line_colour'"

@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.9), .xpe-file, coding: UTF-8
+#date: Thu Mar 12 2026 18:54:08
+#sha1: 9ed04a
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Ninas-MacBook-Air.local', release='23.6.0', version='Darwin Kernel Version 23.6.0: Fri Jul  5 17:56:39 PDT 2024; root:xnu-10063.141.1~2/RELEASE_ARM64_T8122', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+557,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x11f8116c0>'
+557,stderr,received,'Traceback (most recent call last):'
+557,stderr,received,'  File "/opt/anaconda3/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+557,stderr,received,'    if self._compression_filename is not None:'
+557,stderr,received,"AttributeError: 'Rectangle' object has no attribute '_compression_filename'"
+557,stderr,received,'Traceback (most recent call last):'
+557,stderr,received,'  File "/Users/ninakapstein/Desktop/cogsup/programming/Assignments/Week-3/Exercises/display-edges.py", line 10, in <module>\n    square1 = expyriment.stimuli.Rectangle(colour = "red", line_width =5)'
+557,stderr,received,"TypeError: Rectangle.__init__() missing 1 required positional argument: 'size'"
