@@ -11,8 +11,8 @@ text.present()
 
 key = exp.keyboard.wait()
 
-#This does not work
-text2 = stimuli.TextLine("You pressed", print(key))
+
+text2 = stimuli.TextLine("You pressed " + chr(key[0]))
 
 text2.present()
 

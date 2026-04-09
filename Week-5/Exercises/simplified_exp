@@ -1,0 +1,37 @@
+from expyriment import design, control, stimuli, misc
+
+#Create an object experiment called "exp"
+exp = design.Experiment(name = "class_exp")
+
+#Avoid fullscreen and use a small window for development
+control.set_develop_mode()
+
+#Initialize the experiment (creates the window, prepares everything)
+control.initialize(exp)
+
+#Define some constants, size and color
+STIMSIZE = 100
+GREY = misc.constants.C_GREY
+BLUE = misc.constants.C_BLUE
+RED = misc.constants.C_RED
+LATERAL_OFFSET = 200
+
+#Prepares stimli
+square = stimuli.Rectangle(size = (STIMSIZE, STIMSIZE), colour = RED, position = (-LATERAL_OFFSET, 0))
+circle = stimuli.Circle(radius = STIMSIZE//2, colour = BLUE, position = (LATERAL_OFFSET,0))
+
+#Preload
+square.preload()
+circle.preload()
+
+#Start the experiment
+control.start()
+
+#Present
+square.present(clear = True, update = False)
+circle.present(clear = False, update = True)
+
+exp.clock.wait(3000)
+
+
+control.end()
